@@ -18,3 +18,9 @@ cmake --build build
 - prj3 ソースコードがサブディレクトリに分かれている場合
 - prj4 C++11 を使う
 - prj5 ライブラリを探す
+
+# memo
+
+`cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=1` を実行すると build の下に compile_commands.json が作られる。
+このファイルへのパスを、`.vscode/c_cpp_properties.json`に設定すると intelliSence に情報を渡せる。
+cf: https://stackoverflow.com/questions/46258143/visual-studio-code-how-to-configure-includepath-for-better-intellisense-results
