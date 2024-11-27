@@ -1,6 +1,7 @@
 {
   "configurations": [
     {
+      "name": "linux",
       "defines": ["HOTOKU_PRJ6"]
     }
   ],
